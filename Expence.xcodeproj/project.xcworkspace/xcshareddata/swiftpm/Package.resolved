@@ -1,0 +1,42 @@
+{
+  "originHash" : "23a2ad3244d84a46530c84d3f3febbb68b712f0fa5064b8b1e37e3b462a18b38",
+  "pins" : [
+    {
+      "identity" : "async-swift-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/makinosp/async-swift-ui",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1526f2b2771d429347b8fdddb6efe8792b5b356e"
+      }
+    },
+    {
+      "identity" : "licenselist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cybozu/LicenseList.git",
+      "state" : {
+        "revision" : "4801461b9ca8eee843c19ab8fe88a590ce064e15",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "swift-memberwise-init-macro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gohanlon/swift-memberwise-init-macro",
+      "state" : {
+        "revision" : "47a2bdf45f1567e7324438f8482e362ee1c3fb44",
+        "version" : "0.5.2"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

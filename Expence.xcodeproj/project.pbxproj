@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2073F7852D8FE0AD0048C8FA /* AsyncSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2073F7842D8FE0AD0048C8FA /* AsyncSwiftUI */; };
+		2073F7882D8FE0CD0048C8FA /* LicenseList in Frameworks */ = {isa = PBXBuildFile; productRef = 2073F7872D8FE0CD0048C8FA /* LicenseList */; };
+		2073F78B2D8FE0F00048C8FA /* MemberwiseInit in Frameworks */ = {isa = PBXBuildFile; productRef = 2073F78A2D8FE0F00048C8FA /* MemberwiseInit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		201269F32D3A377C00860F53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2073F7882D8FE0CD0048C8FA /* LicenseList in Frameworks */,
+				2073F78B2D8FE0F00048C8FA /* MemberwiseInit in Frameworks */,
+				2073F7852D8FE0AD0048C8FA /* AsyncSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,9 @@
 			);
 			name = Expence;
 			packageProductDependencies = (
+				2073F7842D8FE0AD0048C8FA /* AsyncSwiftUI */,
+				2073F7872D8FE0CD0048C8FA /* LicenseList */,
+				2073F78A2D8FE0F00048C8FA /* MemberwiseInit */,
 			);
 			productName = Expence;
 			productReference = 201269DE2D3A377800860F53 /* Expence.app */;
@@ -208,6 +220,11 @@
 			);
 			mainGroup = 201269D52D3A377800860F53;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2073F7832D8FE0AD0048C8FA /* XCRemoteSwiftPackageReference "async-swift-ui" */,
+				2073F7862D8FE0CD0048C8FA /* XCRemoteSwiftPackageReference "LicenseList" */,
+				2073F7892D8FE0F00048C8FA /* XCRemoteSwiftPackageReference "swift-memberwise-init-macro" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 201269DF2D3A377800860F53 /* Products */;
 			projectDirPath = "";
@@ -575,6 +592,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2073F7832D8FE0AD0048C8FA /* XCRemoteSwiftPackageReference "async-swift-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/makinosp/async-swift-ui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		2073F7862D8FE0CD0048C8FA /* XCRemoteSwiftPackageReference "LicenseList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cybozu/LicenseList.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		2073F7892D8FE0F00048C8FA /* XCRemoteSwiftPackageReference "swift-memberwise-init-macro" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gohanlon/swift-memberwise-init-macro";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2073F7842D8FE0AD0048C8FA /* AsyncSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2073F7832D8FE0AD0048C8FA /* XCRemoteSwiftPackageReference "async-swift-ui" */;
+			productName = AsyncSwiftUI;
+		};
+		2073F7872D8FE0CD0048C8FA /* LicenseList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2073F7862D8FE0CD0048C8FA /* XCRemoteSwiftPackageReference "LicenseList" */;
+			productName = LicenseList;
+		};
+		2073F78A2D8FE0F00048C8FA /* MemberwiseInit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2073F7892D8FE0F00048C8FA /* XCRemoteSwiftPackageReference "swift-memberwise-init-macro" */;
+			productName = MemberwiseInit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 201269D62D3A377800860F53 /* Project object */;
 }
